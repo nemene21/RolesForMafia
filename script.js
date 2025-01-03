@@ -8,7 +8,7 @@ for (let i = 0; i < 1000000; i++) {
 function remove_from_list(list, el) {
     for (let i = 0; i < list.length; i++) {
         if (list[i] == el) {
-            list.pop(i);
+            list.slice(i, 1);
             return;
         }
     }
