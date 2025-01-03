@@ -1,0 +1,65 @@
+
+html {
+    width: 100%; height: 100%;
+    background-color: rgb(103, 103, 255);
+    font-family: "Zilla Slab";
+    user-select: none;
+}
+
+body {
+    text-align: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body * {
+    margin: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 128px;
+}
+
+body button {
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(0, 0, 49);
+
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    scale: 1;
+}
+
+body button:hover {
+    scale: 1.2;
+}
+
+body button:active {
+    scale: 1.5;
+}
+
+#role_list {
+    width: 100%;
+}
+
+#role_list .number_span {
+    margin-left: 64px;
+}
+
+.number_button_div {
+    display: inline-block;
+    padding: 0;
+    position: absolute;
+    transform: translateY(-25%);
+}
+
+.number_button_div * {
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+    width: 32px;
+    height: 32px;
+}
